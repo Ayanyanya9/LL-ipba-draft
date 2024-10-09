@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="body {.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <title>Content Types Page</title>
+    <style>
+        .content-title {
+            font-size: 2em; /* Title size */
+            text-align: center; /* Center the title */
+            margin: 20px 0; /* Space above and below the title */
+        }
+
+        .rectangle-container {
+            display: flex;
+            flex-direction: column; /* Stack rectangles vertically */
+            align-items: center; /* Center align the rectangles */
+            margin: 20px; /* Space around the container */
+        }
+
+        .rectangle {
+            width: 80%; /* Rectangle width */
+            height: 100px; /* Rectangle height */
+            background-color: #e1e1e1; /* Rectangle color */
+            border-radius: 10px; /* Rounded corners */
+            margin: 10px 0; /* Space between rectangles */
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+
+        .rectangle:hover {
+            background-color: #d1d1d1; /* Change color on hover */
+        }
+
+        .hidden-text {
+            display: none; /* Hidden by default */
+            margin-top: 10px; /* Space above hidden text */
+            font-size: 1.1em; /* Size of hidden text */
+            text-align: center; /* Center align the hidden text */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <i class="fa-solid fa-video"></i>
+            IPBA TUBE
+        </div>
+        <hr />
+        <div class="sidebar-links">
+            <a href="LL IPBA.HTML" class="">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+            <a href="Untitled31.html" class="">
+                <i class="fa-solid fa-film"></i>
+                Shorts
+            </a>
+            <a href="#" class="active">
+                <i class="fa-solid fa-layer-group"></i>
+                Content types
+            </a>
+        </div>
+        <hr />
+        <div class="member-list">
+            <h4>Group 9 - members</h4>
+            <ul>
+                <li>Aisha Aguilar</li>
+                <li>Joel Acoba</li>
+                <li>Xiana Lei Sentillas</li>
+                <li>Tamara Anya Shan</li>
+                <li>Andrea Tanteo</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="content-title">Content Types</div>
+        <div class="rectangle-container">
+            <div class="rectangle" onclick="toggleText('text1')">
+                Type 1
+            </div>
+            <div id="text1" class="hidden-text">Details about Content Type 1...</div>
+
+            <div class="rectangle" onclick="toggleText('text2')">
+                Type 2
+            </div>
+            <div id="text2" class="hidden-text">Details about Content Type 2...</div>
+
+            <div class="rectangle" onclick="toggleText('text3')">
+                Type 3
+            </div>
+            <div id="text3" class="hidden-text">Details about Content Type 3...</div>
+        </div>
+    </div>
+
+    <script src="C:/Users/Admin/script.js"></script> <!-- Link to your JavaScript file -->
+    <script>
+        function toggleText(textId) {
+            const textElement = document.getElementById(textId);
+            if (textElement.style.display === "none" || textElement.style.display === "") {
+                textElement.style.display = "block"; // Show text
+            } else {
+                textElement.style.display = "none"; // Hide text
+            }
+        }
+    </script>
+</body>
+</html>

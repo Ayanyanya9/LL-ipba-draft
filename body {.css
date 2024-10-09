@@ -1,0 +1,123 @@
+html, body {
+    height: 100%; /* Ensure the full height of the page is used */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #e1e1e1;
+    width: 20%; /* 1/5 of the page width */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in total width */
+    height: 100%; /* Make sure the sidebar takes full height */
+}
+
+.sidebar-header {
+    font-size: 2em; /* Increased font size for header */
+    font-weight: bold; /* Makes the text thicker */
+    color: red;
+    margin-bottom: 30px; /* Increase space below the header */
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Add padding to make it longer */
+}
+
+.sidebar-header i {
+    margin-right: 15px; /* Increase spacing between icon and text */
+}
+
+.sidebar-links {
+    margin-bottom: 30px; /* Increase space below the links */
+}
+
+.sidebar-links a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em; /* Increased font size for links */
+    text-decoration: none;
+    color: black;
+    margin: 15px 0; /* Increase space between links */
+    padding: 10px; /* Add padding for the highlight effect */
+    border-radius: 5px; /* Rounded corners for the highlight */
+}
+
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+.member-list {
+    margin-top: 30px; /* Increase space above members list */
+}
+
+.member-list h4 {
+    font-size: 1.2em; /* Increased font size for members title */
+}
+
+.main-content {
+    background-color: white;
+    width: 80%; /* 4/5 of the page width */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 50%; /* Adjust width as needed */
+    padding: 12px; /* Increased padding for a bigger search bar */
+    font-size: 1.2em; /* Increased font size for search bar */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.small-title {
+    font-size: 1.5em; /* Increased font size for small title */
+    margin-bottom: 20px; /* Space between title and images */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-card {
+    width: 30%; /* Three images per row */
+    margin: 20px 0; /* Space between rows */
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%; /* Make the image responsive */
+    height: 250px; /* Adjusted height for a slightly less rectangular look */
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.image-title {
+    font-size: 1.1em; /* Increased font size for image titles */
+    margin-top: 5px; /* Space between image and title */
+    text-align: left; /* Align the text to the left */
+}
+
+.sidebar-links a.active {
+    background-color: #d1d1d1; /* Highlight color for active link */
+    color: red; /* Optional: change text color for active link */
+}
+.single-image-container {
+    text-align: center; /* Center the image */
+    margin-top: 20px; /* Space above the image */
+}
+
+.long-image {
+    width: 80%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
